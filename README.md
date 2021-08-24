@@ -1,4 +1,4 @@
-Dice Roller
+Spell Book
 =================
 
 This project will implement an api to pull information when a user searches for spells for the tabletop game, Dungeons & Dragons.
