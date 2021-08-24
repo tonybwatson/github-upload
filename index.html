@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DnD Spell Search</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="text-center col-10">
+      <h1 class="text-center">DnD 5e Spell Search<br /></h1>
+    </header>
+
+    <div class="container text-center">
+      <form>
+        <input
+          list="spell-list"
+          class="form-control-lg col-10 text-center"
+          placeholder="Enter a spell name"
+        />
+
+        <datalist id="spell-list">
+          <option value="acid-arrow"></option>
+          <option value="acid-splash"></option>
+          <option value="aid"></option>
+          <option value="alarm"></option>
+          <option value="alter-self"></option>
+          <option value="animal-friendship"></option>
+          <option value="animal-messenger"></option>
+          <option value="animal-shapes"></option>
+          <option value="animate-dead"></option>
+          <option value="animate-objects"></option>
+          <option value="antilife-shell"></option>
+          <option value="antimagic-field"></option>
+          <option value="antipathy-sympathy"></option>
+          <option value="arcane-eye"></option>
+          <option value="arcane-hand"></option>
+          <option value="arcane-lock"></option>
+          <option value="arcane-sword"></option>
+          <option value="arcanists-magic-aura"></option>
+          <option value="astral-projection"></option>
+          <option value="augury"></option>
+          <option value="awaken"></option>
+          <option value="bane"></option>
+          <option value="banishment"></option>
+          <option value="barkskin"></option>
+          <option value="beacon-of-hope"></option>
+          <option value="bestow-curse"></option>
+          <option value="black-tentacles"></option>
+          <option value="blade-barrier"></option>
+          <option value="bless"></option>
+          <option value="blight"></option>
+          <option value="blindness-deafness"></option>
+          <option value="blink"></option>
+          <option value="blur"></option>
+          <option value="branding-smite"></option>
+          <option value="burning-hands"></option>
+          <option value="call-lightning"></option>
+          <option value="calm-emotions"></option>
+          <option value="chain-lightning"></option>
+          <option value="charm-person"></option>
+          <option value="chill-touch"></option>
+          <option value="circle-of-death"></option>
+          <option value="clairvoyance"></option>
+          <option value="clone"></option>
+          <option value="cloudkill"></option>
+          <option value="color-spray"></option>
+          <option value="command"></option>
+          <option value="commune"></option>
+          <option value="commune-with-nature"></option>
+          <option value="comprehend-languages"></option>
+          <option value="compulsion"></option>
+          <option value="cone-of-cold"></option>
+          <option value="confusion"></option>
+          <option value="conjure-animals"></option>
+          <option value="conjure-celestial"></option>
+          <option value="conjure-elemental"></option>
+          <option value="conjure-fey"></option>
+          <option value="conjure-minor-elementals"></option>
+          <option value="conjure-woodland-beings"></option>
+          <option value="contact-other-plane"></option>
+          <option value="contagion"></option>
+          <option value="contingency"></option>
+          <option value="continual-flame"></option>
+          <option value="control-water"></option>
+          <option value="control-weather"></option>
+          <option value="counterspell"></option>
+          <option value="create-food-and-water"></option>
+          <option value="create-or-destroy-water"></option>
+          <option value="create-undead"></option>
+          <option value="creation"></option>
+          <option value="cure-wounds"></option>
+          <option value="dancing-lights"></option>
+          <option value="darkness"></option>
+          <option value="darkvision"></option>
+          <option value="daylight"></option>
+          <option value="death-ward"></option>
+          <option value="delayed-blast-fireball"></option>
+          <option value="demiplane"></option>
+          <option value="detect-evil-and-good"></option>
+          <option value="detect-magic"></option>
+          <option value="detect-poison-and-disease"></option>
+          <option value="detect-thoughts"></option>
+          <option value="dimension-door"></option>
+          <option value="disguise-self"></option>
+          <option value="disintegrate"></option>
+          <option value="dispel-evil-and-good"></option>
+          <option value="dispel-magic"></option>
+          <option value="divination"></option>
+          <option value="divine-favor"></option>
+          <option value="divine-word"></option>
+          <option value="dominate-beast"></option>
+          <option value="dominate-monster"></option>
+          <option value="dominate-person"></option>
+          <option value="dream"></option>
+          <option value="druidcraft"></option>
+          <option value="earthquake"></option>
+          <option value="eldritch-blast"></option>
+          <option value="enhance-ability"></option>
+          <option value="enlarge-reduce"></option>
+          <option value="entangle"></option>
+          <option value="enthrall"></option>
+          <option value="etherealness"></option>
+          <option value="expeditious-retreat"></option>
+          <option value="eyebite"></option>
+          <option value="fabricate"></option>
+          <option value="faerie-fire"></option>
+          <option value="faithful-hound"></option>
+          <option value="false-life"></option>
+          <option value="fear"></option>
+          <option value="feather-fall"></option>
+          <option value="feeblemind"></option>
+          <option value="find-familiar"></option>
+          <option value="find-steed"></option>
+          <option value="find-the-path"></option>
+          <option value="find-traps"></option>
+          <option value="finger-of-death"></option>
+          <option value="fire-bolt"></option>
+          <option value="fire-shield"></option>
+          <option value="fire-storm"></option>
+          <option value="fireball"></option>
+          <option value="flame-blade"></option>
+          <option value="flame-strike"></option>
+          <option value="flaming-sphere"></option>
+          <option value="flesh-to-stone"></option>
+          <option value="floating-disk"></option>
+          <option value="fly"></option>
+          <option value="fog-cloud"></option>
+          <option value="forbiddance"></option>
+          <option value="forcecage"></option>
+          <option value="foresight"></option>
+          <option value="freedom-of-movement"></option>
+          <option value="freezing-sphere"></option>
+          <option value="gaseous-form"></option>
+          <option value="gate"></option>
+          <option value="geas"></option>
+          <option value="gentle-repose"></option>
+          <option value="giant-insect"></option>
+          <option value="glibness"></option>
+          <option value="globe-of-invulnerability"></option>
+          <option value="glyph-of-warding"></option>
+          <option value="goodberry"></option>
+          <option value="grease"></option>
+          <option value="greater-invisibility"></option>
+          <option value="greater-restoration"></option>
+          <option value="guardian-of-faith"></option>
+          <option value="guards-and-wards"></option>
+          <option value="guidance"></option>
+          <option value="guiding-bolt"></option>
+          <option value="gust-of-wind"></option>
+          <option value="hallow"></option>
+          <option value="hallucinatory-terrain"></option>
+          <option value="harm"></option>
+          <option value="haste"></option>
+          <option value="heal"></option>
+          <option value="healing-word"></option>
+          <option value="heat-metal"></option>
+          <option value="hellish-rebuke"></option>
+          <option value="heroes-feast"></option>
+          <option value="heroism"></option>
+          <option value="hideous-laughter"></option>
+          <option value="hold-monster"></option>
+          <option value="hold-person"></option>
+          <option value="holy-aura"></option>
+          <option value="hunters-mark"></option>
+          <option value="hypnotic-pattern"></option>
+          <option value="ice-storm"></option>
+          <option value="identify"></option>
+          <option value="illusory-script"></option>
+          <option value="imprisonment"></option>
+          <option value="incendiary-cloud"></option>
+          <option value="inflict-wounds"></option>
+          <option value="insect-plague"></option>
+          <option value="instant-summons"></option>
+          <option value="invisibility"></option>
+          <option value="irresistible-dance"></option>
+          <option value="jump"></option>
+          <option value="knock"></option>
+          <option value="legend-lore"></option>
+          <option value="lesser-restoration"></option>
+          <option value="levitate"></option>
+          <option value="light"></option>
+          <option value="lightning-bolt"></option>
+          <option value="locate-animals-or-plants"></option>
+          <option value="locate-creature"></option>
+          <option value="locate-object"></option>
+          <option value="longstrider"></option>
+          <option value="mage-armor"></option>
+          <option value="mage-hand"></option>
+          <option value="magic-circle"></option>
+          <option value="magic-jar"></option>
+          <option value="magic-missile"></option>
+          <option value="magic-mouth"></option>
+          <option value="magic-weapon"></option>
+          <option value="magnificent-mansion"></option>
+          <option value="major-image"></option>
+          <option value="mass-cure-wounds"></option>
+          <option value="mass-heal"></option>
+          <option value="mass-healing-word"></option>
+          <option value="mass-suggestion"></option>
+          <option value="maze"></option>
+          <option value="meld-into-stone"></option>
+          <option value="mending"></option>
+          <option value="message"></option>
+          <option value="meteor-swarm"></option>
+          <option value="mind-blank"></option>
+          <option value="minor-illusion"></option>
+          <option value="mirage-arcane"></option>
+          <option value="mirror-image"></option>
+          <option value="mislead"></option>
+          <option value="misty-step"></option>
+          <option value="modify-memory"></option>
+          <option value="moonbeam"></option>
+          <option value="move-earth"></option>
+          <option value="nondetection"></option>
+          <option value="pass-without-trace"></option>
+          <option value="passwall"></option>
+          <option value="phantasmal-killer"></option>
+          <option value="phantom-steed"></option>
+          <option value="planar-ally"></option>
+          <option value="planar-binding"></option>
+          <option value="plane-shift"></option>
+          <option value="plant-growth"></option>
+          <option value="poison-spray"></option>
+          <option value="polymorph"></option>
+          <option value="power-word-kill"></option>
+          <option value="power-word-stun"></option>
+          <option value="prayer-of-healing"></option>
+          <option value="prestidigitation"></option>
+          <option value="prismatic-spray"></option>
+          <option value="prismatic-wall"></option>
+          <option value="private-sanctum"></option>
+          <option value="produce-flame"></option>
+          <option value="programmed-illusion"></option>
+          <option value="project-image"></option>
+          <option value="protection-from-energy"></option>
+          <option value="protection-from-evil-and-good"></option>
+          <option value="protection-from-poison"></option>
+          <option value="purify-food-and-drink"></option>
+          <option value="raise-dead"></option>
+          <option value="ray-of-enfeeblement"></option>
+          <option value="ray-of-frost"></option>
+          <option value="regenerate"></option>
+          <option value="reincarnate"></option>
+          <option value="remove-curse"></option>
+          <option value="resilient-sphere"></option>
+          <option value="resistance"></option>
+          <option value="resurrection"></option>
+          <option value="reverse-gravity"></option>
+          <option value="revivify"></option>
+          <option value="rope-trick"></option>
+          <option value="sacred-flame"></option>
+          <option value="sanctuary"></option>
+          <option value="scorching-ray"></option>
+          <option value="scrying"></option>
+          <option value="secret-chest"></option>
+          <option value="see-invisibility"></option>
+          <option value="seeming"></option>
+          <option value="sending"></option>
+          <option value="sequester"></option>
+          <option value="shapechange"></option>
+          <option value="shatter"></option>
+          <option value="shield"></option>
+          <option value="shield-of-faith"></option>
+          <option value="shillelagh"></option>
+          <option value="shocking-grasp"></option>
+          <option value="silence"></option>
+          <option value="silent-image"></option>
+          <option value="simulacrum"></option>
+          <option value="sleep"></option>
+          <option value="sleet-storm"></option>
+          <option value="slow"></option>
+          <option value="spare-the-dying"></option>
+          <option value="speak-with-animals"></option>
+          <option value="speak-with-dead"></option>
+          <option value="speak-with-plants"></option>
+          <option value="spider-climb"></option>
+          <option value="spike-growth"></option>
+          <option value="spirit-guardians"></option>
+          <option value="spiritual-weapon"></option>
+          <option value="stinking-cloud"></option>
+          <option value="stone-shape"></option>
+          <option value="stoneskin"></option>
+          <option value="storm-of-vengeance"></option>
+          <option value="suggestion"></option>
+          <option value="sunbeam"></option>
+          <option value="sunburst"></option>
+          <option value="symbol"></option>
+          <option value="telekinesis"></option>
+          <option value="telepathic-bond"></option>
+          <option value="teleport"></option>
+          <option value="teleportation-circle"></option>
+          <option value="thaumaturgy"></option>
+          <option value="thunderwave"></option>
+          <option value="time-stop"></option>
+          <option value="tiny-hut"></option>
+          <option value="tongues"></option>
+          <option value="transport-via-plants"></option>
+          <option value="tree-stride"></option>
+          <option value="true-polymorph"></option>
+          <option value="true-resurrection"></option>
+          <option value="true-seeing"></option>
+          <option value="true-strike"></option>
+          <option value="unseen-servant"></option>
+          <option value="vampiric-touch"></option>
+          <option value="vicious-mockery"></option>
+          <option value="wall-of-fire"></option>
+          <option value="wall-of-force"></option>
+          <option value="wall-of-ice"></option>
+          <option value="wall-of-stone"></option>
+          <option value="wall-of-thorns"></option>
+          <option value="warding-bond"></option>
+          <option value="water-breathing"></option>
+          <option value="water-walk"></option>
+          <option value="web"></option>
+          <option value="weird"></option>
+          <option value="wind-walk"></option>
+          <option value="wind-wall"></option>
+          <option value="wish"></option>
+          <option value="word-of-recall"></option>
+          <option value="zone-of-truth"></option>
+        </datalist>
+        <button
+          type="submit"
+          id="search_button"
+          class="btn btn-light btn-lg col-8"
+          style="width: 70%"
+        >
+          <div class="searchbar-text">
+            Search
+          </div>
+        </button>
+      </form>
+    </div>
+
+    <div class="card-space"></div>
+
+    <!--     <div class="text-center">
+    <h1>
+      Dice Roller
+    </h1>
+    <h2>
+      UNDER CONSTRUCTION
+      </h2>
+    </div> -->
+
+    <footer class="fixed-bottom text-center bg-light">
+      Built using API from dnd5eapi.co
+    </footer>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"
+  ></script>
+</html>
